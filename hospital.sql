@@ -1,31 +1,29 @@
-use hospital;
-
 CREATE TABLE doctor (
-	doc_id	int	NOT NULL,
+	doc_id	int(10)	NOT NULL,
 	doc_name	varchar(10)	 NOT NULL,
-	doc_phone	varchar(10)	NOT NULL,
+	doc_phone	varchar(20)	NOT NULL,
 	doc_email	varchar(20)	NULL,
 	doc_major	varchar(10)	NOT NULL
 );
 
 CREATE TABLE diagnosis (
-	dia_id	int	NOT NULL,
+	dia_id	int(10)	NOT NULL,
 	dia_text	text	NOT NULL,
 	dia_date	date	NOT NULL,
-	doc_id	int	NOT NULL
+	doc_id	int(10)	NOT NULL
 );
 
 CREATE TABLE patient (
-	pat_id	int	NOT NULL,
+	pat_id	int(10)	NOT NULL,
 	pat_name	varchar(10) NOT	NULL,
-	pat_gen	int	NOT NULL,
+	pat_gen	int(10)	NOT NULL,
 	pat_phone	varchar(20)	NOT NULL,
 	pat_partient	char(1)	NOT NULL,
-	doc_id	int	NOT NULL
+	doc_id	int(10)	NOT NULL
 );
 
 CREATE TABLE nurse (
-	nur_id	int	NOT NULL,
+	nur_id	int(10)	NOT NULL,
 	nur_partient	char(1)	NOT NULL,
 	nur_phone	varchar(20)	NOT NULL,
 	nur_email	varchar(30)	NOT NULL,
@@ -74,4 +72,3 @@ VALUES
 (3,'환자3','0','010-3333-4444','B','103'),
 (4,'환자4','0','010-4444-5555','C','102'),
 (5,'환자5','1','010-5555-6666','D','104');
-
