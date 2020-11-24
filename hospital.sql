@@ -16,7 +16,7 @@ CREATE TABLE diagnosis (
 CREATE TABLE patient (
 	pat_id	int(10)	NOT NULL,
 	pat_name	varchar(10) NOT	NULL,
-	pat_gen	int(10)	NOT NULL,
+	pat_gen	varchar(2)	NOT NULL,
 	pat_phone	varchar(20)	NOT NULL,
 	pat_partient	char(1)	NOT NULL,
 	doc_id	int(10)	NOT NULL
@@ -67,8 +67,8 @@ VALUES
 
 insert into patient 
 VALUES
-(1,'환자1','1','010-1111-2222','A','101'),
-(2,'환자2','1','010-2222-3333','A','102'),
-(3,'환자3','0','010-3333-4444','B','103'),
-(4,'환자4','0','010-4444-5555','C','102'),
-(5,'환자5','1','010-5555-6666','D','104');
+(1,'환자1','남','010-1111-2222','A','101'),
+(2,'환자2','남','010-2222-3333','A','102'),
+(3,'환자3','여','010-3333-4444','B','103'),
+(4,'환자4','여','010-4444-5555','C','102'),
+(5,'환자5','남','010-5555-6666','D','104');
